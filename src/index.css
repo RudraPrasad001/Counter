@@ -1,0 +1,84 @@
+.Counter{
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: beige;
+  width:200px ;
+  font-size: 60px;
+  border: 2px solid black;
+  border-radius: 20px ;
+}
+.CounterContainer{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.ButtonContainer{
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+.Buttons{
+  cursor: pointer;
+  margin: 10px;
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Inc{
+  background-color: hsl(120,90% ,60% );
+  
+}
+#Inc:hover{
+  background-color: hsl(120,90% ,80% );
+  transition: ease-in; 
+  transition-duration: 1s;
+  
+  
+}
+#Dec:hover{
+  background-color:  hsl(0,90% ,60% );
+  transition: ease-in; 
+  transition-duration: 1s;
+  
+}
+#Res:hover{
+  background-color: hsl(240,90% ,76% );
+  transition: ease-in; 
+  transition-duration: 1s;
+  
+}
+#Dec{
+  background-color: hsl(0,90% ,40% )
+}
+#Res{
+  background-color: hsl(240,90% ,66% );
+}
+.Container{
+  padding: 20px;
+  background-color: hsl(246, 60%, 87%);
+  border-radius: 20px;
+  width: fit-content;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.CounterHeader{
+  font-size: 40px;
+}
+.MainContainer{
+  display: flex;
+  transform: translateY(50%);
+  justify-content: center;
+}
+@media(max-width:480px){
+  .CounterHeader{
+    font-size: 30px;
+  }
+  .Counter{
+    width: 80%;
+    
+  }
+  .Buttons{
+    width: 100%;
+    font-size: 35px;
+  }
+}
